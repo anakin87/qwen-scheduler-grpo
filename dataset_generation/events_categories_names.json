@@ -1,0 +1,62 @@
+{
+    "Music Festival": [
+        "Avril Lavigne concert",
+        "Backstage tour VIP pass",
+        "David Guetta DJ set",
+        "Korean BBQ food trucks",
+        "The Killers concert",
+        "David Bowie tribute concert",
+        "Sum 41 concert",
+        "Silent disco party",
+        "Fireworks",
+        "Jam session"
+    ],
+    "University": [
+        "Calculus lecture with Prof. Adams",
+        "Chemistry experiment",
+        "Group study for physics test",
+        "Researching in library",
+        "Meeting with Emma and Jake",
+        "Quantum computing guest talk",
+        "Office hours with Prof. Chen",
+        "Chess with Daniel",
+        "Structural Dynamics lecture",
+        "Study session with Sarah and Mike"
+    ],
+    "Office Work": [
+        "Marketing standup on Zoom",
+        "Q1 revenue report writing",
+        "Brainstorming with Luke and Patrick",
+        "Client call with Acme Corp",
+        "Meeting with Lisa at café",
+        "Preparing PTO handover",
+        "Analyzing product performance",
+        "One-on-one with manager",
+        "Replying to emails",
+        "Updating website content"
+    ],
+    "Normal Life": [
+        "Jogging at the park",
+        "Shopping at farmer's market",
+        "Yoga class with Emily",
+        "Deep cleaning the kitchen",
+        "Cooking pasta",
+        "Reading 'Dune'",
+        "Watching 'Inception'",
+        "Walking with Bella",
+        "Planting flowers in the garden",
+        "Calling Mom and Dad"
+    ],
+    "Tech Conference": [
+        "AI keynote",
+        "Web3 panel discussion",
+        "Networking with engineers",
+        "Live coding on Rust",
+        "3D printing workshop",
+        "Trying new VR headset",
+        "Small Language Models talk",
+        "Async Python talk",
+        "Drone building hackathon",
+        "Digital detox meditation session"
+    ]
+}
