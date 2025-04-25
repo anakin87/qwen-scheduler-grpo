@@ -1,0 +1,30 @@
+<think>
+1. Evaluate the events and their priorities.
+2. Determine the chronological order of the events.
+3. Resolve any conflicts by choosing the event with the higher weighted time.
+4. Ensure no overlaps occur.
+5. Construct the schedule based on the above rules.
+</think>
+
+<schedule>
+<event>
+<name>Sum 41 concert</name>
+<start>06:38</start>
+<end>08:23</end>
+</event>
+<event>
+<name>Backstage tour VIP pass</name>
+<start>07:40</start>
+<end>08:55</end>
+</event>
+<event>
+<name>Fireworks</name>
+<start>17:50</start>
+<end>18:05</end>
+</event>
+<event>
+<name>Avril Lavigne concert</name>
+<start>18:29</start>
+<end>19:59</end>
+</event>
+</schedule>

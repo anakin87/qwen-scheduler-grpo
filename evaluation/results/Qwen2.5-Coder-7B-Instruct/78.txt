@@ -1,0 +1,56 @@
+<think>
+First, let's organize the events based on their starting times and weights:
+
+1. One-on-one with manager (00:37 - 02:07) - weight = 1
+2. Preparing PTO handover (01:20 - 03:20) - weight = 2, priority
+3. Marketing standup on Zoom (03:27 - 03:42) - weight = 1
+4. Q1 revenue report writing (04:41 - 05:26) - weight = 1
+5. Brainstorming with Luke and Patrick (17:58 - 18:28) - weight = 1
+6. Analyzing product performance (21:05 - 21:50) - weight = 2, priority
+
+Next, we need to create a schedule that maximizes the sum of weighted event durations while respecting the rules.
+
+1. Start with the priority events:
+   - Preparing PTO handover (01:20 - 03:20) - weight = 2
+   - Analyzing product performance (21:05 - 21:50) - weight = 2
+
+   Total weighted time so far: (3:20 - 1:20) + (21:50 - 21:05) = 2:00 + 0:45 = 2:45
+
+2. Now, fit in the non-priority events without overlapping the prioritized events:
+   - One-on-one with manager (00:37 - 02:07) - weight = 1. This overlaps with Preparing PTO handover, so exclude it.
+   - Marketing standup on Zoom (03:27 - 03:42) - weight = 1, fits after Preparing PTO handover
+   - Q1 revenue report writing (04:41 - 05:26) - weight = 1, fits after Marketing standup
+   - Brainstorming with Luke and Patrick (17:58 - 18:28) - weight = 1, fits after Analyzing product performance
+
+   Total weighted time so far: 2:45 + 0:15 + 0:45 + 0:45 + 0:30 = 3:60
+
+The final schedule has a total weighted time of 3 hours, which is the maximum possible without violating the rules.
+
+</think>
+<schedule>
+<event>
+<name>Preparing PTO handover</name>
+<start>01:20</start>
+<end>03:20</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>03:27</start>
+<end>03:42</end>
+</event>
+<event>
+<name>Q1 revenue report writing</name>
+<start>04:41</start>
+<end>05:26</end>
+</event>
+<event>
+<name>Brainstorming with Luke and Patrick</name>
+<start>17:58</start>
+<end>18:28</end>
+</event>
+<event>
+<name>Analyzing product performance</name>
+<start>21:05</start>
+<end>21:50</end>
+</event>
+</schedule>

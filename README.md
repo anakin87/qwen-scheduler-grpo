@@ -2,20 +2,23 @@
 
 I tried to teach a Language Model how to create a schedule from a list of events and priorities.
 
-I used GRPO, meaning the model is trained over time with Reinforcement Learning to reason and maximize
+I used GRPO (Group Relative Policy Optimization), meaning the model is trained over time with Reinforcement Learning to reason and maximize
 some reward functions. This differs from Supervised Fine-Tuning methods: we are not showing the model any target
 completions, only the prompts.
 
-I hope this experiment proves useful to someone!
+I hope sharing this experiment is useful for anyone else diving into RL for LLMs.
 
-<!-- TODO: put images and add link to the article -->
+➡️ Read the full story [in my blog post](PUTLKINK).
 
-# The problem
+<img src="./assets/qwen_scheduler_logo.png" width="40%"></img>
 
-Given a list of events and priorities, we ask the model to create a schedule that maximizes the total weighted duration.
-In this contenxt, priorities just means events with a weight of 2, while normal events have weight of 1.
+## The problem
 
-## Example input
+Given a list of events and priorities, we ask the model to create a schedule that maximizes the total duration of selected events, weighted by priority.
+
+In this setup, a priority event gets a weight of 2, and a normal event gets a weight of 1.
+
+### Example input
 
 Events:
 - Event A (01:27 - 01:42)
@@ -25,7 +28,7 @@ Events:
 Priorities:
 - Event B
 
-## Example output
+### Example output
 
 ```xml
 <think>A detailed reasoning</think>
@@ -46,29 +49,37 @@ Priorities:
 ## Why?
 
 Teaching a Language Model something that can be easily and efficiently solved with deterministic programming might 
-sound not very useful... That's because it isn't.
+sound not very useful... And that's fine!
 
 But it's 2025, and everyone is trying GRPO with GSM8K or the Countdown Game...
 
-I find it fascinating to make a Language Model learn from just prompts and rewards, not by examples. And I wanted to try
+I was fascinated by making an LLM learn without explicit examples, just prompts and rewards. And I wanted to try
 something different.
 
-Choosing a different problem (events scheduling) forced me to think about the problem setting, generate data, choose the base model, design reward functions and and run multiple rounds of training, hoping that my model would learn something.
+Choosing an original problem (events scheduling) forced me to think about the problem setting, generate data, choose the base model, design reward functions (and experiment fun things like reward hacking!) and run multiple rounds of training, hoping that my model would learn something.
 
 A fun and rewarding 😄 experience.
 
 ## Results
 
-Evaluated on the test set, the model developed some capabilities to reason on this task and create valid schedules, even outperforming a model twice its size.
+<img src="./assets/eval_valid_schedules.png" width="40%"></img>
 
-Still, it struggles with overlapping events, suggesting the reward functions could be improved in that area.
+The training worked! The final 7B model improved on the task, significantly outperforming its base model and even a larger 14B model on the test set.
+
+It got good at following the format and most rules.
+
+However, it still struggles with preventing overlapping events, suggesting the reward function design for that specific constraint
+could be improved.
+
 
 ## Repository organization
 - [Dataset generation](./dataset_generation/): Script to generate the [Events Scheduling dataset](https://huggingface.co/datasets/anakin87/events-scheduling).
-- [📓 GRPO Training Notebook](train_grpo.ipynb)
-- [Evaluation](./evaluation/): Inference + evaluation scripts for both the original and trained models.
+- [📓 GRPO Training Notebook](train_grpo.ipynb).
+- [Prompts](prompts.txt): System and User prompt templates.
+- [Evaluation](./evaluation/): Scripts for running inference and evaluating model outputs.  (Also contains saved outputs.)
 
 ## Materials
+- [Blog post](PUTLKINK)
 - [Events Scheduling dataset](https://huggingface.co/datasets/anakin87/events-scheduling)
 - [Model: anakin87/qwen-scheduler-7b-grpo](https://huggingface.co/anakin87/qwen-scheduler-7b-grpo)
 - [Weight and Biases report](https://api.wandb.ai/links/stefanofiorucci/22oryc3v)

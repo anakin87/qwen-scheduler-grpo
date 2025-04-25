@@ -1,0 +1,44 @@
+<think>
+To create an optimized schedule, I need to prioritize the "Web3 panel discussion" and ensure it does not overlap with any other events. Let's evaluate the schedule step-by-step:
+
+1. **Drone building hackathon (00:08 - 00:53)**: This event should be included as it starts first.
+2. **AI keynote (00:53 - 02:08)**: This event follows immediately after the drone hackathon.
+3. **Async Python talk (03:50 - 04:35)**: This event starts at 03:50 and ends at 04:35. It does not conflict with any other events.
+4. **Web3 panel discussion (06:57 - 08:12)**: This event has a high priority and should be included. However, it conflicts with the "Trying new VR headset" event which also starts at 06:57. We need to exclude one of them. Since the Web3 panel discussion has a higher priority, we will exclude the "Trying new VR headset."
+5. **Live coding on Rust (17:21 - 18:36)**: This event starts at 17:21 and ends at 18:36. It does not conflict with any other events.
+6. **Small Language Models talk (19:59 - 20:59)**: This event starts at 19:59 and ends at 20:59. It does not conflict with any other events.
+
+By following these steps, we have created a schedule that maximizes the sum of weighted event durations while respecting all constraints.
+</think>
+<schedule>
+<event>
+<name>Drone building hackathon</name>
+<start>00:08</start>
+<end>00:53</end>
+</event>
+<event>
+<name>AI keynote</name>
+<start>00:53</start>
+<end>02:08</end>
+</event>
+<event>
+<name>Async Python talk</name>
+<start>03:50</start>
+<end>04:35</end>
+</event>
+<event>
+<name>Web3 panel discussion</name>
+<start>06:57</start>
+<end>08:12</end>
+</event>
+<event>
+<name>Live coding on Rust</name>
+<start>17:21</start>
+<end>18:36</end>
+</event>
+<event>
+<name>Small Language Models talk</name>
+<start>19:59</start>
+<end>20:59</end>
+</event>
+</schedule>

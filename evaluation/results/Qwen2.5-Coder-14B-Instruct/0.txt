@@ -1,0 +1,63 @@
+<think>
+Let's first analyze the events and their priorities:
+
+1. **The Killers concert** (00:22 - 00:37)
+2. **Sum 41 concert** (02:19 - 03:04)
+3. **Jam session** (07:47 - 09:17)
+4. **Backstage tour VIP pass** (09:08 - 09:23) - Priority
+5. **Fireworks** (12:27 - 13:12) - Priority
+6. **Korean BBQ food trucks** (12:42 - 14:42)
+7. **David Bowie tribute concert** (17:31 - 18:16)
+
+Backstage tour VIP pass and Fireworks are both priority events. We need to ensure they fit in the schedule without conflicts and maximize the weighted duration.
+
+### Scheduling Steps:
+1. **Include Backstage tour VIP pass** as it is a priority and has no conflicts with other events.
+2. **Include Fireworks** as it is a priority and has no conflicts with other events.
+3. Check for other events that can fit without conflicts.
+4. Calculate the weighted duration to ensure optimization.
+
+### Conflict Resolution:
+- Korean BBQ food trucks (12:42 - 14:42) conflicts with Fireworks (12:27 - 13:12). Since Fireworks has higher priority, we exclude Korean BBQ food trucks.
+
+### Final Schedule:
+1. The Killers concert
+2. Sum 41 concert
+3. Jam session
+4. Backstage tour VIP pass
+5. Fireworks
+6. David Bowie tribute concert
+</think>
+
+<schedule>
+<event>
+<name>The Killers concert</name>
+<start>00:22</start>
+<end>00:37</end>
+</event>
+<event>
+<name>Sum 41 concert</name>
+<start>02:19</start>
+<end>03:04</end>
+</event>
+<event>
+<name>Jam session</name>
+<start>07:47</start>
+<end>09:17</end>
+</event>
+<event>
+<name>Backstage tour VIP pass</name>
+<start>09:08</start>
+<end>09:23</end>
+</event>
+<event>
+<name>Fireworks</name>
+<start>12:27</start>
+<end>13:12</end>
+</event>
+<event>
+<name>David Bowie tribute concert</name>
+<start>17:31</start>
+<end>18:16</end>
+</event>
+</schedule>

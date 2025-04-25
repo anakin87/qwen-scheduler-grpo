@@ -1,0 +1,33 @@
+<think>
+1. **Researching in library (09:35 - 11:05)**: Normal event.
+2. **Group study for physics test (10:41 - 10:56)**: Normal event, overlaps with "Researching in library". Since the group study is shorter, it can be excluded to make room for the library research.
+3. **Office hours with Prof. Chen (12:39 - 13:24)**: Priority event.
+4. **Study session with Sarah and Mike (12:55 - 13:40)**: Normal event, overlaps with "Office hours with Prof. Chen". Since the office hours are more priority, this event can be excluded.
+5. **Structural Dynamics lecture (15:58 - 16:43)**: Normal event.
+6. **Calculus lecture with Prof. Adams (18:06 - 19:51)**: Priority event.
+
+Since the group study and the study session with Sarah and Mike overlap with higher-priority events, they will be excluded.
+</think>
+
+<schedule>
+<event>
+<name>Researching in library</name>
+<start>09:35</start>
+<end>11:05</end>
+</event>
+<event>
+<name>Office hours with Prof. Chen</name>
+<start>12:39</start>
+<end>13:24</end>
+</event>
+<event>
+<name>Structural Dynamics lecture</name>
+<start>15:58</start>
+<end>16:43</end>
+</event>
+<event>
+<name>Calculus lecture with Prof. Adams</name>
+<start>18:06</start>
+<end>19:51</end>
+</event>
+</schedule>

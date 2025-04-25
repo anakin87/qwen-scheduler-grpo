@@ -1,0 +1,22 @@
+<schedule>
+    <event>
+        <name>Small Language Models talk</name>
+        <start>07:45</start>
+        <end>09:15</end>
+    </event>
+    <event>
+        <name>3D printing workshop</name>
+        <start>12:17</start>
+        <end>13:17</end>
+    </event>
+    <event>
+        <name>Web3 panel discussion</name>
+        <start>11:42</start>
+        <end>12:27</end>
+    </event>
+    <event>
+        <name>Live coding on Rust</name>
+        <start>13:38</start>
+        <end>15:38</end>
+    </event>
+</schedule>

@@ -1,0 +1,33 @@
+<think>
+1. **Event Listing with Durations**:
+   - Analyzing product performance (01:11 - 01:56) -> 45 minutes
+   - Client call with Acme Corp (06:34 - 07:19) -> 45 minutes
+   - Marketing standup on Zoom (14:51 - 15:51) -> 60 minutes
+   - Q1 revenue report writing (15:19 - 16:04) -> 45 minutes
+
+2. **Priorities**:
+   - Marketing standup on Zoom (Weight = 2)
+
+3. **Sorting and Conflict Resolution**:
+   - All events are non-overlapping, so they can be listed in their chronological order.
+   - "Marketing standup on Zoom" is the highest priority, and since it conflicts with "Q1 revenue report writing," we'll exclude "Q1 revenue report writing" to maximize the weighted duration.
+
+</think>
+
+<schedule>
+<event>
+<name>Analyzing product performance</name>
+<start>01:11</start>
+<end>01:56</end>
+</event>
+<event>
+<name>Client call with Acme Corp</name>
+<start>06:34</start>
+<end>07:19</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>14:51</start>
+<end>15:51</end>
+</event>
+</schedule>

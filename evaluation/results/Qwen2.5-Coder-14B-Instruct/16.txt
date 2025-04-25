@@ -1,0 +1,45 @@
+<think>
+Let's reason through the scheduling of these events based on the given rules:
+
+1. **Brainstorming with Luke and Patrick (01:34 - 03:19)**
+   - No conflicts, so it can be scheduled first.
+
+2. **Q1 revenue report writing (01:47 - 02:32)**
+   - This event overlaps with Brainstorming and finishes earlier. Since its duration is shorter, it will be excluded to maximize weighted duration.
+
+3. **Marketing standup on Zoom (09:38 - 10:53)**
+   - This is a priority event. It doesn't overlap with any other events, so it can be scheduled next.
+
+4. **Client call with Acme Corp (14:12 - 15:42)**
+   - This event overlaps with One-on-one with manager, which starts at the same time but finishes a minute later. Since Client call has a higher weighted time (since it is a priority event), it will be scheduled instead of One-on-one with manager.
+
+5. **One-on-one with manager (14:13 - 15:43)**
+   - This event conflicts with Client call with Acme Corp. Since Client call has a higher weighted time, it will be excluded.
+
+6. **Preparing PTO handover (19:30 - 21:00)**
+   - No conflicts, so it can be scheduled last.
+
+</think>
+
+<schedule>
+<event>
+<name>Brainstorming with Luke and Patrick</name>
+<start>01:34</start>
+<end>03:19</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>09:38</start>
+<end>10:53</end>
+</event>
+<event>
+<name>Client call with Acme Corp</name>
+<start>14:12</start>
+<end>15:42</end>
+</event>
+<event>
+<name>Preparing PTO handover</name>
+<start>19:30</start>
+<end>21:00</end>
+</event>
+</schedule>

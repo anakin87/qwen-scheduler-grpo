@@ -1,0 +1,34 @@
+<think>
+1. Chronologically order the events based on their start times.
+2. Identify priority events (Drone building hackathon) and ensure they are placed correctly without overlaps.
+3. In case of conflicts, prioritize the event with the higher weighted time (priority events have weight = 2, normal events have weight = 1).
+4. Exclude any events that cause conflicts and result in a lower sum of weighted event durations.
+</think>
+
+<schedule>
+<event>
+<name>Small Language Models talk</name>
+<start>00:53</start>
+<end>02:38</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>02:50</start>
+<end>03:20</end>
+</event>
+<event>
+<name>Networking with engineers</name>
+<start>06:16</start>
+<end>06:31</end>
+</event>
+<event>
+<name>Live coding on Rust</name>
+<start>08:35</start>
+<end>09:05</end>
+</event>
+<event>
+<name>Async Python talk</name>
+<start>09:41</start>
+<end>11:41</end>
+</event>
+</schedule>

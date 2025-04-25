@@ -1,0 +1,38 @@
+ <think>
+1. **Chronological Order**: All events are already in chronological order.
+2. **No Overlapping**: We need to check for overlaps and ensure the AI keynote (priority event) is scheduled correctly.
+3. **Weighted Time**: The AI keynote has a weight of 2, while the others have a weight of 1. If there is an overlap, the event with the higher weighted time should be included.
+4. **Maximize Weighted Event Duration**: We need to ensure that the schedule maximizes the sum of weighted event durations.
+
+**Event Details**:
+- Async Python talk (08:21 - 09:21)
+- AI keynote (10:47 - 11:47)
+- Web3 panel discussion (11:45 - 12:15)
+- Drone building hackathon (12:26 - 14:11)
+
+**Checking for Overlaps**:
+- The AI keynote (10:47 - 11:47) overlaps with Web3 panel discussion (11:45 - 12:15). Since the AI keynote has a higher weight (2), we will include it and exclude the Web3 panel discussion.
+
+**Final Schedule**:
+- Async Python talk (08:21 - 09:21)
+- AI keynote (10:47 - 11:47)
+- Drone building hackathon (12:26 - 14:11)
+</think>
+
+<schedule>
+<event>
+<name>Async Python talk</name>
+<start>08:21</start>
+<end>09:21</end>
+</event>
+<event>
+<name>AI keynote</name>
+<start>10:47</start>
+<end>11:47</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>12:26</start>
+<end>14:11</end>
+</event>
+</schedule>

@@ -1,0 +1,26 @@
+<think>
+1. First, I will list all the events and their priorities for clarity.
+2. The priority events are the Sum 41 concert (Weight = 2) and the Silent disco party (Weight = 2).
+3. The normal events are the David Guetta DJ set (Weight = 1), David Bowie tribute concert (Weight = 1), and Avril Lavigne concert (Weight = 1).
+4. The events need to be arranged in chronological order, and I will ensure that no overlaps occur.
+5. I will include the highest weighted event in case of any overlaps.
+6. I will calculate the total weighted duration of the included events to maximize the sum.
+</think>
+
+<schedule>
+  <event>
+    <name>David Guetta DJ set</name>
+    <start>09:10</start>
+    <end>09:40</end>
+  </event>
+  <event>
+    <name>Silent disco party</name>
+    <start>11:50</start>
+    <end>13:05</end>
+  </event>
+  <event>
+    <name>Sum 41 concert</name>
+    <start>15:52</start>
+    <end>16:22</end>
+  </event>
+</schedule>

@@ -1,0 +1,37 @@
+<think>
+Let's first list all the events with their start and end times:
+1. Web3 panel discussion (01:15 - 02:00)
+2. Trying new VR headset (01:40 - 02:10)
+3. Async Python talk (05:30 - 06:45)
+4. AI keynote (06:18 - 07:03)
+5. Networking with engineers (20:35 - 21:50)
+
+The priority event is the AI keynote (weight = 2).
+
+To maximize the sum of weighted event durations, we should prioritize the AI keynote if possible.
+
+Let's analyze the schedule:
+1. Web3 panel discussion lasts 45 minutes. It can be included without overlapping other events.
+2. Trying new VR headset starts after the Web3 panel discussion ends. However, it overlaps with the remaining events.
+3. Async Python talk has a start time of 05:30, which is after the AI keynote has ended.
+4. AI keynote is the priority event and should be included first to maximize weight.
+5. Networking with engineers starts too late and is non-essential if it doesn't fit.
+
+Let's build the schedule:
+
+1. AI keynote (06:18 - 07:03) - weight = 2
+2. Async Python talk (05:30 - 06:45) - weight = 1
+</think>
+
+<schedule>
+<event>
+<name>AI keynote</name>
+<start>06:18</start>
+<end>07:03</end>
+</event>
+<event>
+<name>Async Python talk</name>
+<start>05:30</start>
+<end>06:45</end>
+</event>
+</schedule>

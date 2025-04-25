@@ -1,0 +1,42 @@
+<think>
+To create an optimized schedule, I'll first prioritize the events based on their start times and weights. I'll then place the priority events first and adjust the schedule accordingly to maximize the sum of weighted event durations without overlapping.
+
+1. **Fireworks** is the only priority event with a weight of 2 and is already scheduled from 00:14 to 01:44.
+2. The **David Guetta DJ set** starts at 03:01 and has a normal weight of 1.
+3. The **Silent disco party** and **Jam session** overlap from 10:46 to 12:00. The **Silent disco party** has a higher weight (2), so it will be included, and the **Jam session** will be excluded.
+4. The **Sum 41 concert** and **The Killers concert** overlap from 11:00 to 13:00. The **Sum 41 concert** has a higher weight (2), so it will be included, and the **The Killers concert** will be excluded.
+5. The **Korean BBQ food trucks** and **Backstage tour VIP pass** are non-conflicting events. The **Korean BBQ food trucks** start after the last previous event ends, so it can be included without conflict.
+
+<schedule>
+<event>
+<name>Fireworks</name>
+<start>00:14</start>
+<end>01:44</end>
+</event>
+<event>
+<name>David Guetta DJ set</name>
+<start>03:01</start>
+<end>04:16</end>
+</event>
+<event>
+<name>Silent disco party</name>
+<start>10:46</start>
+<end>12:00</end>
+</event>
+<event>
+<name>Sum 41 concert</name>
+<start>11:00</start>
+<end>13:00</end>
+</event>
+<event>
+<name>Korean BBQ food trucks</name>
+<start>19:05</start>
+<end>21:05</end>
+</event>
+<event>
+<name>Backstage tour VIP pass</name>
+<start>21:56</start>
+<end>23:41</end>
+</event>
+</schedule>
+</think>

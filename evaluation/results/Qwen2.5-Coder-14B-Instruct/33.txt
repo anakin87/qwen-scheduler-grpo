@@ -1,0 +1,34 @@
+<think>
+1. First, I'll list all events in chronological order.
+2. Then, I'll assign weights to each event based on their priority.
+3. I'll check for any overlapping events and decide which one to keep based on the higher weighted time.
+4. Finally, I'll construct the schedule with the selected events.
+</think>
+
+<schedule>
+<event>
+<name>Reading 'Dune'</name>
+<start>04:18</start>
+<end>04:48</end>
+</event>
+<event>
+<name>Planting flowers in the garden</name>
+<start>06:06</start>
+<end>06:51</end>
+</event>
+<event>
+<name>Cooking pasta</name>
+<start>15:25</start>
+<end>15:55</end>
+</event>
+<event>
+<name>Jogging at the park</name>
+<start>19:55</start>
+<end>21:55</end>
+</event>
+<event>
+<name>Watching 'Inception'</name>
+<start>21:32</start>
+<end>22:02</end>
+</event>
+</schedule>

@@ -1,0 +1,42 @@
+<think>
+1. First, I need to ensure that the "Small Language Models talk" event is included in the schedule due to its higher priority.
+2. Next, I'll place the other events in chronological order, respecting the given constraints and ensuring no overlaps, and prioritizing events that might overlap with the already scheduled "Small Language Models talk".
+3. I'll calculate the total weighted duration of the schedule to ensure it's optimized.
+</think>
+<schedule>
+<event>
+<name>Async Python talk</name>
+<start>06:12</start>
+<end>08:12</end>
+</event>
+<event>
+<name>3D printing workshop</name>
+<start>08:30</start>
+<end>09:00</end>
+</event>
+<event>
+<name>Live coding on Rust</name>
+<start>16:08</start>
+<end>17:53</end>
+</event>
+<event>
+<name>Networking with engineers</name>
+<start>03:18</start>
+<end>03:33</end>
+</event>
+<event>
+<name>AI keynote</name>
+<start>19:20</start>
+<end>20:50</end>
+</event>
+<event>
+<name>Small Language Models talk</name>
+<start>03:27</start>
+<end>04:57</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>12:37</start>
+<end>13:07</end>
+</event>
+</schedule>

@@ -1,0 +1,52 @@
+<think>
+Let's analyze the events to determine the optimal schedule.
+
+1. **Client call with Acme Corp (06:20 - 07:35)** - Priority event.
+2. **Analyzing product performance (13:27 - 15:12)** - Normal event.
+3. **Marketing standup on Zoom (14:37 - 15:52)** - Normal event.
+4. **Brainstorming with Luke and Patrick (19:12 - 19:57)** - Normal event.
+
+Since the client call with Acme Corp is a priority event and has the earliest start time, it must be included first. We need to check for overlaps and ensure all events respect the chronological order and priority rules.
+
+**Overlap Check:**
+- The client call ends at 07:35, so it doesn't overlap with any other event.
+- Analyzing product performance starts at 13:27, which doesn't overlap with any other event.
+- Marketing standup starts at 14:37, which doesn't overlap with analyzing product performance.
+- Brainstorming with Luke and Patrick starts at 19:12, which doesn't overlap with any other event.
+
+All events can be included without conflicts, and they respect the chronological order and priority.
+
+**Calculate Weighted Event Durations:**
+- Client call with Acme Corp (Priority, Duration: 1 hour 15 min): 1.25 * 2 = 2.5
+- Analyzing product performance: 1.75 * 1 = 1.75
+- Marketing standup on Zoom: 1.25 * 1 = 1.25
+- Brainstorming with Luke and Patrick: 0.75 * 1 = 0.75
+
+**Total Weighted Duration:**
+2.5 + 1.75 + 1.25 + 0.75 = 6.25
+
+This schedule maximizes the sum of weighted event durations without any conflicts.
+</think>
+
+<schedule>
+<event>
+<name>Client call with Acme Corp</name>
+<start>06:20</start>
+<end>07:35</end>
+</event>
+<event>
+<name>Analyzing product performance</name>
+<start>13:27</start>
+<end>15:12</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>14:37</start>
+<end>15:52</end>
+</event>
+<event>
+<name>Brainstorming with Luke and Patrick</name>
+<start>19:12</start>
+<end>19:57</end>
+</event>
+</schedule>

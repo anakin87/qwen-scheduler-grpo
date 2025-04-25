@@ -1,0 +1,48 @@
+<think>
+To create an optimized schedule, I need to ensure that high-priority events are included and that no time slots overlap. Let's analyze the events and priorities:
+
+1. **Digital detox meditation session (18:53 - 19:23)**
+   - Priority: 2 (high)
+   - Conflict with: Networking with engineers and Live coding on Rust
+
+2. **AI keynote (16:35 - 18:35)**
+   - Priority: 2 (high)
+   - Conflict with: Async Python talk and Networking with engineers
+
+3. **Drone building hackathon (06:52 - 08:07)**
+   - Normal event (weight = 1)
+   - No immediate conflict
+
+4. **Small Language Models talk (07:05 - 08:50)**
+   - Normal event (weight = 1)
+   - Conflicts with: Drone building hackathon
+
+5. **Async Python talk (16:05 - 16:20)**
+   - Normal event (weight = 1)
+   - Conflict with: AI keynote
+
+To maximize the sum of weighted event durations while respecting priorities, I will:
+- Prioritize the Digital detox meditation session from 18:53 to 19:23.
+- Remove the AI keynote (16:35 - 18:35) as it conflicts with the high-priority session.
+- Include the Drone building hackathon (06:52 - 08:07) as it has no conflicts.
+
+The remaining events must fit without overlapping other priority events.
+
+</think>
+<schedule>
+<event>
+<name>Drone building hackathon</name>
+<start>06:52</start>
+<end>08:07</end>
+</event>
+<event>
+<name>Small Language Models talk</name>
+<start>07:05</start>
+<end>08:50</end>
+</event>
+<event>
+<name>Digital detox meditation session</name>
+<start>18:53</start>
+<end>19:23</end>
+</event>
+</schedule>

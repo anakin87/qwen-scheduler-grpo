@@ -1,0 +1,48 @@
+<think>
+
+1. First, identify the priority event and place it in the schedule.
+   - Priority event: Calculus lecture with Prof. Adams (21:40 - 22:55)
+
+2. Next, add the remaining events in their original start times, ensuring no overlaps and respecting chronological order.
+   - Researching in library (01:53 - 02:23)
+   - Office hours with Prof. Chen (01:58 - 03:28)
+   - Chemistry experiment (15:21 - 17:21)
+   - Structural Dynamics lecture (17:42 - 18:57)
+   - Study session with Sarah and Mike (18:49 - 19:34)
+
+3. The events are already in chronological order and do not conflict with each other, so no further adjustments are needed.
+
+</think>
+
+<schedule>
+<event>
+<name>Researching in library</name>
+<start>01:53</start>
+<end>02:23</end>
+</event>
+<event>
+<name>Office hours with Prof. Chen</name>
+<start>01:58</start>
+<end>03:28</end>
+</event>
+<event>
+<name>Chemistry experiment</name>
+<start>15:21</start>
+<end>17:21</end>
+</event>
+<event>
+<name>Structural Dynamics lecture</name>
+<start>17:42</start>
+<end>18:57</end>
+</event>
+<event>
+<name>Study session with Sarah and Mike</name>
+<start>18:49</start>
+<end>19:34</end>
+</event>
+<event>
+<name>Calculus lecture with Prof. Adams</name>
+<start>21:40</start>
+<end>22:55</end>
+</event>
+</schedule>

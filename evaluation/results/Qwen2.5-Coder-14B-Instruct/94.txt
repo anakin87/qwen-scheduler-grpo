@@ -1,0 +1,53 @@
+<think>
+First, I'll identify the priority event and then try to fit the rest of the events around it without any overlaps. The Small Language Models talk is the priority event, so it should be included in the schedule regardless of conflicts.
+
+Next, I'll go through the list of events and add them to the schedule in chronological order, ensuring no overlaps and maximizing the weighted duration.
+
+1. **Networking with engineers (03:18 - 03:33)**: This event ends before the Small Language Models talk starts, so it can be included.
+2. **Small Language Models talk (03:27 - 04:57)**: This is the priority event and must be included.
+3. **Async Python talk (06:12 - 08:12)**: This event starts after the Small Language Models talk, so it can be included.
+4. **3D printing workshop (08:30 - 09:00)**: This event starts after the Async Python talk, so it can be included.
+5. **Drone building hackathon (12:37 - 13:07)**: This event starts after the 3D printing workshop, so it can be included.
+6. **Live coding on Rust (16:08 - 17:53)**: This event starts after the Drone building hackathon, so it can be included.
+7. **AI keynote (19:20 - 20:50)**: This event starts after the Live coding on Rust, so it can be included.
+
+All events fit into the schedule without any overlaps, and the priority event is included. The sum of weighted durations is maximized as all events are included.
+
+</think>
+<schedule>
+<event>
+<name>Networking with engineers</name>
+<start>03:18</start>
+<end>03:33</end>
+</event>
+<event>
+<name>Small Language Models talk</name>
+<start>03:27</start>
+<end>04:57</end>
+</event>
+<event>
+<name>Async Python talk</name>
+<start>06:12</start>
+<end>08:12</end>
+</event>
+<event>
+<name>3D printing workshop</name>
+<start>08:30</start>
+<end>09:00</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>12:37</start>
+<end>13:07</end>
+</event>
+<event>
+<name>Live coding on Rust</name>
+<start>16:08</start>
+<end>17:53</end>
+</event>
+<event>
+<name>AI keynote</name>
+<start>19:20</start>
+<end>20:50</end>
+</event>
+</schedule>

@@ -1,0 +1,50 @@
+<think>
+1. **Identify Priority Events**: AI keynote and Networking with engineers are priority events.
+2. **Event Conflicts**:
+   - AI keynote (11:39 - 13:24) conflicts with Networking with engineers (11:32 - 13:32).
+   - Since the AI keynote has a higher weight, we exclude Networking with engineers and include AI keynote.
+3. **Event Timings**:
+   - Live coding on Rust (00:23 - 01:23)
+   - Digital detox meditation session (00:59 - 01:44) conflicts with Live coding on Rust (00:23 - 01:23).
+   - Including Live coding on Rust and excluding Digital detox meditation session.
+   - Trying new VR headset (02:18 - 03:33)
+   - Drone building hackathon (04:38 - 06:38)
+   - Small Language Models talk (11:03 - 11:18)
+   - AI keynote (11:39 - 13:24)
+   - Web3 panel discussion (18:19 - 19:49)
+4. **Final Schedule**:
+   - Include all events in chronological order, ensuring no overlaps and giving priority to AI keynote based on weight.
+
+</think>
+<schedule>
+<event>
+<name>Live coding on Rust</name>
+<start>00:23</start>
+<end>01:23</end>
+</event>
+<event>
+<name>Trying new VR headset</name>
+<start>02:18</start>
+<end>03:33</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>04:38</start>
+<end>06:38</end>
+</event>
+<event>
+<name>Small Language Models talk</name>
+<start>11:03</start>
+<end>11:18</end>
+</event>
+<event>
+<name>AI keynote</name>
+<start>11:39</start>
+<end>13:24</end>
+</event>
+<event>
+<name>Web3 panel discussion</name>
+<start>18:19</start>
+<end>19:49</end>
+</event>
+</schedule>

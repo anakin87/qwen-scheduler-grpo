@@ -1,0 +1,29 @@
+<think>
+1. First, I'll list out all the events with their start and end times and their priority.
+2. I'll then sort these events chronologically.
+3. In case of overlap, I'll prioritize the event with the higher weight.
+4. I'll create the schedule by including only the events that fit the criteria without any overlaps.
+</think>
+
+<schedule>
+<event>
+<name>Analyzing product performance</name>
+<start>07:14</start>
+<end>07:59</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>12:37</start>
+<end>13:07</end>
+</event>
+<event>
+<name>Q1 revenue report writing</name>
+<start>14:25</start>
+<end>15:25</end>
+</event>
+<event>
+<name>Updating website content</name>
+<start>17:42</start>
+<end>19:27</end>
+</event>
+</schedule>

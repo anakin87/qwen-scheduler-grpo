@@ -1,0 +1,74 @@
+<think>
+1. Identify all events and their priorities.
+2. Determine the strict chronological order by respecting the start and end times.
+3. Prioritize events that start earlier, regardless of their weight.
+4. If conflicts arise, place the higher weighted event.
+5. Maximize the sum of weighted event durations without overlapping any events.
+
+### Chronological Order
+1. One-on-one with manager (01:17 - 01:32)
+2. Preparing PTO handover (02:37 - 03:07)
+3. Marketing standup on Zoom (11:43 - 12:13) - Priority event
+4. Brainstorming with Luke and Patrick (17:06 - 17:51)
+5. Replying to emails (18:55 - 19:10)
+6. Client call with Acme Corp (19:30 - 20:30)
+7. Meeting with Lisa at café (19:58 - 21:58)
+
+### Scheduled Events
+1. One-on-one with manager (01:17 - 01:32) - weight = 1
+2. Preparing PTO handover (02:37 - 03:07) - weight = 1
+3. Marketing standup on Zoom (11:43 - 12:13) - weight = 2
+4. Brainstorming with Luke and Patrick (17:06 - 17:51) - weight = 1
+5. Replying to emails (18:55 - 19:10) - weight = 1
+6. Client call with Acme Corp (19:30 - 20:30) - weight = 1
+7. Meeting with Lisa at café (19:58 - 21:58) - weight = 1
+
+### Sum of Weighted Event Durations
+- Marketing standup on Zoom: 2 * (12:13 - 11:43) = 2 * 30 minutes = 60 minutes
+- One-on-one with manager: 1 * 15 minutes = 15 minutes
+- Preparing PTO handover: 1 * 30 minutes = 30 minutes
+- Brainstorming with Luke and Patrick: 1 * 45 minutes = 45 minutes
+- Replying to emails: 1 * 15 minutes = 15 minutes
+- Client call with Acme Corp: 1 * 60 minutes = 60 minutes
+- Meeting with Lisa at café: 1 * 2 hours = 120 minutes
+
+Total: 60 + 15 + 30 + 45 + 15 + 60 + 120 = 360 minutes = 6 hours
+
+</think>
+<schedule>
+<event>
+<name>One-on-one with manager</name>
+<start>01:17</start>
+<end>01:32</end>
+</event>
+<event>
+<name>Preparing PTO handover</name>
+<start>02:37</start>
+<end>03:07</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>11:43</start>
+<end>12:13</end>
+</event>
+<event>
+<name>Brainstorming with Luke and Patrick</name>
+<start>17:06</start>
+<end>17:51</end>
+</event>
+<event>
+<name>Replying to emails</name>
+<start>18:55</start>
+<end>19:10</end>
+</event>
+<event>
+<name>Client call with Acme Corp</name>
+<start>19:30</start>
+<end>20:30</end>
+</event>
+<event>
+<name>Meeting with Lisa at café</name>
+<start>19:58</start>
+<end>21:58</end>
+</event>
+</schedule>

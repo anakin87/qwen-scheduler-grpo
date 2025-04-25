@@ -1,0 +1,32 @@
+<think>
+The given events and their priority need to be scheduled in strict chronological order while respecting the priority constraints. Let's evaluate each event and determine which ones can be included in the schedule without overlaps and prioritize the Avril Lavigne concert.
+
+1. **Fireworks (09:45 - 10:45)**
+2. **Silent disco party (09:50 - 11:05)** - This event overlaps with the Fireworks event, so it cannot be included if Fireworks is included.
+3. **Korean BBQ food trucks (12:16 - 13:16)**
+4. **David Bowie tribute concert (13:29 - 15:14)**
+5. **Avril Lavigne concert (17:25 - 18:25)** - This is a priority event and must be included.
+</think>
+
+<schedule>
+<event>
+<name>Fireworks</name>
+<start>09:45</start>
+<end>10:45</end>
+</event>
+<event>
+<name>Korean BBQ food trucks</name>
+<start>12:16</start>
+<end>13:16</end>
+</event>
+<event>
+<name>David Bowie tribute concert</name>
+<start>13:29</start>
+<end>15:14</end>
+</event>
+<event>
+<name>Avril Lavigne concert</name>
+<start>17:25</start>
+<end>18:25</end>
+</event>
+</schedule>

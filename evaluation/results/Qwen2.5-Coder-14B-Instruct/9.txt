@@ -1,0 +1,65 @@
+<think>
+1. Identify priority events:
+   - Trying new VR headset (weight = 2)
+   - Live coding on Rust (weight = 2)
+
+2. List all events in chronological order:
+   - 3D printing workshop (01:17 - 01:47)
+   - Trying new VR headset (09:48 - 11:03)
+   - Drone building hackathon (11:04 - 11:19)
+   - Live coding on Rust (11:14 - 11:44)
+   - Async Python talk (19:41 - 20:11)
+   - AI keynote (20:26 - 22:26)
+   - Networking with engineers (22:12 - 23:42)
+
+3. Resolve conflicts based on weights:
+   - Trying new VR headset overlaps with Drone building hackathon. Since both have weight 1, we choose the earliest one.
+   - Live coding on Rust overlaps with Drone building hackathon (already chosen) and Async Python talk. Both have weight 1, so we choose the earliest one.
+
+4. Generate the final schedule:
+   - 3D printing workshop
+   - Trying new VR headset
+   - Drone building hackathon
+   - Live coding on Rust
+   - Async Python talk
+   - AI keynote
+   - Networking with engineers
+</think>
+
+<schedule>
+  <event>
+    <name>3D printing workshop</name>
+    <start>01:17</start>
+    <end>01:47</end>
+  </event>
+  <event>
+    <name>Trying new VR headset</name>
+    <start>09:48</start>
+    <end>11:03</end>
+  </event>
+  <event>
+    <name>Drone building hackathon</name>
+    <start>11:04</start>
+    <end>11:19</end>
+  </event>
+  <event>
+    <name>Live coding on Rust</name>
+    <start>11:14</start>
+    <end>11:44</end>
+  </event>
+  <event>
+    <name>Async Python talk</name>
+    <start>19:41</start>
+    <end>20:11</end>
+  </event>
+  <event>
+    <name>AI keynote</name>
+    <start>20:26</start>
+    <end>22:26</end>
+  </event>
+  <event>
+    <name>Networking with engineers</name>
+    <start>22:12</start>
+    <end>23:42</end>
+  </event>
+</schedule>

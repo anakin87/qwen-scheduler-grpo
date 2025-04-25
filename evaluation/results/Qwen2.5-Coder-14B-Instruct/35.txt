@@ -1,0 +1,45 @@
+<think>
+1. Identify all events and their start and end times.
+2. Determine which events are priority events and which are normal events.
+3. Create a chronological order of all events.
+4. Resolve any overlaps by prioritizing higher-weighted events.
+5. Ensure the final schedule follows the rules provided.
+</think>
+
+<schedule>
+<event>
+<name>Meeting with Lisa at café</name>
+<start>00:21</start>
+<end>01:21</end>
+</event>
+<event>
+<name>Updating website content</name>
+<start>01:22</start>
+<end>02:22</end>
+</event>
+<event>
+<name>Q1 revenue report writing</name>
+<start>09:01</start>
+<end>10:31</end>
+</event>
+<event>
+<name>Replying to emails</name>
+<start>16:06</start>
+<end>16:51</end>
+</event>
+<event>
+<name>Brainstorming with Luke and Patrick</name>
+<start>17:25</start>
+<end>17:55</end>
+</event>
+<event>
+<name>Preparing PTO handover</name>
+<start>20:07</start>
+<end>21:22</end>
+</event>
+<event>
+<name>Analyzing product performance</name>
+<start>21:19</start>
+<end>22:04</end>
+</event>
+</schedule>

@@ -1,0 +1,33 @@
+<think>
+I'll first list the events in chronological order and note the priorities. 
+
+1. Marketing standup on Zoom (06:24 - 06:39) - Normal event
+2. Replying to emails (13:52 - 15:37) - Normal event
+3. Preparing PTO handover (14:18 - 15:48) - Priority event
+4. Meeting with Lisa at café (16:57 - 18:57) - Normal event
+
+Since the preparing PTO handover event is a priority and its time conflicts with the emails event, I'll exclude the emails event to avoid overlap and maximize the weighted duration.
+
+Final schedule will include:
+- Marketing standup on Zoom
+- Preparing PTO handover
+- Meeting with Lisa at café
+</think>
+
+<schedule>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>06:24</start>
+<end>06:39</end>
+</event>
+<event>
+<name>Preparing PTO handover</name>
+<start>14:18</start>
+<end>15:48</end>
+</event>
+<event>
+<name>Meeting with Lisa at café</name>
+<start>16:57</start>
+<end>18:57</end>
+</event>
+</schedule>

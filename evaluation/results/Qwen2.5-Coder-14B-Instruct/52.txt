@@ -1,0 +1,34 @@
+<think>
+1. First, I'll list all events with their start and end times.
+2. I'll mark the priority event with a higher weight.
+3. I'll then check for conflicts and prioritize events with higher weighted times.
+4. If there are conflicts, I'll exclude events to maximize the sum of weighted event durations, following the given rules.
+</think>
+
+<schedule>
+<event>
+<name>Planting flowers in the garden</name>
+<start>03:11</start>
+<end>03:26</end>
+</event>
+<event>
+<name>Jogging at the park</name>
+<start>03:34</start>
+<end>05:19</end>
+</event>
+<event>
+<name>Walking with Bella</name>
+<start>14:14</start>
+<end>14:59</end>
+</event>
+<event>
+<name>Yoga class with Emily</name>
+<start>17:58</start>
+<end>18:43</end>
+</event>
+<event>
+<name>Shopping at farmer's market</name>
+<start>21:05</start>
+<end>21:35</end>
+</event>
+</schedule>

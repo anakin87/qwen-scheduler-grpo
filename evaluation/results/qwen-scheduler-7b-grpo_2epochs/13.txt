@@ -1,0 +1,35 @@
+<think>
+First, let's list all the events and their priorities:
+
+1. Deep cleaning the kitchen (00:02 - 00:47) - Weight = 2
+2. Jogging at the park (02:00 - 03:30) - Weight = 1
+3. Walking with Bella (02:00 - 02:30) - Weight = 1
+4. Shopping at farmer's market (04:39 - 06:24) - Weight = 1
+5. Yoga class with Emily (18:30 - 20:00) - Weight = 2
+
+We need to maximize the sum of weighted event durations while respecting the chronological order and avoiding overlaps. Let's evaluate the options:
+
+- If we include both "Deep cleaning the kitchen" and "Yoga class with Emily," there will be no overlap since they don't conflict chronologically.
+- We should exclude the other events as they either have lower priority or would cause overlaps if included.
+
+Let's calculate the total duration for the selected events:
+- Deep cleaning the kitchen: 00:45 (2 * 45 minutes)
+- Yoga class with Emily: 01:30 (2 * 60 minutes)
+
+Total weighted duration: 00:45 + 01:30 = 02:15
+
+This is the optimal solution as it maximizes the sum of weighted event durations without any conflicts.
+</think>
+
+<schedule>
+<event>
+<name>Deep cleaning the kitchen</name>
+<start>00:02</start>
+<end>00:47</end>
+</event>
+<event>
+<name>Yoga class with Emily</name>
+<start>18:30</start>
+<end>20:00</end>
+</event>
+</schedule>

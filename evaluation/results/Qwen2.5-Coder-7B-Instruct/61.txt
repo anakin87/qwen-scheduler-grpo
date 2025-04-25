@@ -1,0 +1,74 @@
+Let's go through the problem step-by-step to create an optimized schedule.
+
+### Step 1: Sort Events by Start Time
+First, let's list the events in chronological order:
+
+1. Fireworks (00:06 - 01:36)
+2. The Killers concert (00:08 - 00:38)
+3. Sum 41 concert (15:29 - 16:59)
+4. David Guetta DJ set (19:50 - 20:50)
+5. Jam session (19:50 - 20:50)
+
+### Step 2: Apply Priorities
+Given the priorities:
+- David Guetta DJ set (high priority, weight = 2)
+- The Killers concert (high priority, weight = 2)
+
+Let's place the high-priority events first to ensure they don't clash. 
+
+### Step 3: Check for Overlaps and Exclusions
+We need to ensure there are no time conflicts and we maximize the sum of weighted durations. The high-priority events are:
+
+1. The Killers concert (00:08 - 00:38)
+2. David Guetta DJ set (19:50 - 20:50)
+
+Note that the David Guetta DJ set overlaps with the Jam session at 19:50 - 20:50. Since the David Guetta concert has higher priority, the Jam session should be excluded.
+
+### Step 4: Schedule Remaining Events
+Next, we can schedule the remaining events respecting the HIGH priority.
+  
+3. Sum 41 concert (15:29 - 16:59, weight = 1)
+
+The remaining time slots are:
+1. Fireworks (00:06 - 01:36, not overlapping with Killers concert)
+2. Summer 41 concert (15:29 - 16:59)
+
+### Final Adjustment and Schedule
+We need to ensure the sum of weights is maximized. The Sum 41 concert cannot overlaps with killers concert  Feel free to add any optimally adjusted event duration considering to include previously excluded event. Here is the optimal schedule:
+
+- The Killers concert (00:08 - 00:38)
+- David Guetta DJ set (19:50 - 20:50)
+- Sum 41 concert (15:29 - 16:59)
+- Fireworks (00:06 - 01:36)
+
+### Step 5: Verify Remaining Time
+Since the Sum 41 concert overlaps with David Guetta DJ set we add duration 19 - 21 o'clock for any other play, following firework:
+
+  
+
+- Fireworks (00:06 - 01:36)
+- The Killers concert (00:08 - 00:38)
+- David Guetta DJ set (19:50 - 20:50)
+- Sum 41 concert (15:29 - 16:59)
+- Jam Session (19:50 - 20:50)
+
+
+
+
+</think>
+<schedule>
+<event>
+  <name>The Killers concert</name>
+  <start>00:08:00</start>
+  <end>00:38:00</end>
+</event>
+<event>
+  <name>David Guetta DJ set</name>
+  <start>19:50:00</start>
+  <end>20:50:00</end>
+</event>
+</schedule>
+</event> 
+</event>
+</schedule>
+</html>

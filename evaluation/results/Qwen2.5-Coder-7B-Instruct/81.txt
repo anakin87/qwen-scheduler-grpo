@@ -1,0 +1,35 @@
+<think>
+To create an optimized schedule, we need to place high-priority events first to maximize the sum of weighted event durations without overlapping.
+
+Given:
+- Priority event: Calculus lecture with Prof. Adams (12:58 - 14:43, weight = 2)
+- Other events must be scheduled around this event.
+
+1. The Calculus lecture has a high priority and is mandatory, so it will be scheduled between 12:58 and 14:43.
+2. Office hours with Prof. Chen (02:13 - 03:58) and Study session with Sarah and Mike (07:49 - 08:19) are low priority events and can be scheduled before or after the Calculus lecture.
+3. Chess with Daniel (03:24 - 04:54) overlaps with the Calculus lecture, so it can be excluded if needed since it has lower priority.
+
+Let's schedule the events:
+
+- Office hours with Prof. Chen (02:13 - 03:58)
+- Calculus lecture with Prof. Adams (12:58 - 14:43)
+- Study session with Sarah and Mike (07:49 - 08:19)
+</think>
+
+<schedule>
+<event>
+<name>Office hours with Prof. Chen</name>
+<start>02:13</start>
+<end>03:58</end>
+</event>
+<event>
+<name>Calculus lecture with Prof. Adams</name>
+<start>12:58</start>
+<end>14:43</end>
+</event>
+<event>
+<name>Study session with Sarah and Mike</name>
+<start>07:49</start>
+<end>08:19</end>
+</event>
+</schedule>

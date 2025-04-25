@@ -1,0 +1,51 @@
+<think>
+To create an optimized schedule, we need to prioritize the events based on their weights and ensure no overlaps. Let's analyze the events:
+
+1. **Fireworks (00:06 - 01:36)**: Weight = 1
+2. **The Killers concert (00:08 - 00:38)**: Weight = 2
+3. **Sum 41 concert (15:29 - 16:59)**: Weight = 1
+4. **David Guetta DJ set (19:50 - 20:50)**: Weight = 2
+5. **Jam session (19:50 - 20:50)**: Weight = 1
+
+Given priorities:
+- David Guetta DJ set
+- The Killers concert
+
+We should try to include both priority events without overlap. Let's see how they fit into the schedule:
+
+1. **Fireworks (00:06 - 01:36)**: This event is non-priority and starts early, so it should stay as is.
+2. **The Killers concert (00:08 - 00:38)**: This is a priority event and should be included.
+3. **Sum 41 concert (15:29 - 16:59)**: This event is non-priority and does not conflict with any other events, so it should stay as is.
+4. **David Guetta DJ set (19:50 - 20:50)**: This is a priority event, but there is a conflict with the Jam session. Since the David Guetta DJ set has higher weight, we will include it and exclude the Jam session.
+
+Final schedule:
+- Fireworks (00:06 - 01:36)
+- The Killers concert (00:08 - 00:38)
+- Sum 41 concert (15:29 - 16:59)
+- David Guetta DJ set (19:50 - 20:50)
+
+This schedule maximizes the sum of weighted event durations while respecting all constraints.
+</think>
+
+<schedule>
+<event>
+<name>Fireworks</name>
+<start>00:06</start>
+<end>01:36</end>
+</event>
+<event>
+<name>The Killers concert</name>
+<start>00:08</start>
+<end>00:38</end>
+</event>
+<event>
+<name>Sum 41 concert</name>
+<start>15:29</start>
+<end>16:59</end>
+</event>
+<event>
+<name>David Guetta DJ set</name>
+<start>19:50</start>
+<end>20:50</end>
+</event>
+</schedule>

@@ -1,0 +1,55 @@
+<think>
+To create an optimized schedule, I'll first prioritize the events based on their importance and then place them in chronological order, ensuring no overlaps and maximizing the sum of weighted event durations.
+
+1. **Trying new VR headset (13:19 - 15:04, weight = 2)**
+2. **Live coding on Rust (02:28 - 03:58, weight = 2)**
+3. **Web3 panel discussion (00:55 - 02:40, weight = 1)**
+4. **Drone building hackathon (05:59 - 06:59, weight = 1)**
+5. **3D printing workshop (12:08 - 12:23, weight = 1)**
+
+Let's place these events in chronological order:
+
+1. **Web3 panel discussion (00:55 - 02:40)**
+2. **Live coding on Rust (02:28 - 03:58)**
+3. **Trying new VR headset (13:19 - 15:04)**
+4. **Drone building hackathon (05:59 - 06:59)**
+5. **3D printing workshop (12:08 - 12:23)**
+
+Total weighted duration:
+- Web3 panel discussion: 1 hour (1 * 60 = 60)
+- Live coding on Rust: 1 hour 30 minutes (2 * 90 = 180)
+- Trying new VR headset: 1 hour 45 minutes (2 * 105 = 210)
+- Drone building hackathon: 1 hour (1 * 60 = 60)
+- 3D printing workshop: 15 minutes (1 * 15 = 15)
+
+Sum = 60 + 180 + 210 + 60 + 15 = 525 minutes
+
+This schedule respects all the given rules and maximizes the sum of weighted event durations.
+</think>
+<schedule>
+<event>
+<name>Web3 panel discussion</name>
+<start>00:55</start>
+<end>02:40</end>
+</event>
+<event>
+<name>Live coding on Rust</name>
+<start>02:28</start>
+<end>03:58</end>
+</event>
+<event>
+<name>Trying new VR headset</name>
+<start>13:19</start>
+<end>15:04</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>05:59</start>
+<end>06:59</end>
+</event>
+<event>
+<name>3D printing workshop</name>
+<start>12:08</start>
+<end>12:23</end>
+</event>
+</schedule>

@@ -1,0 +1,37 @@
+<think>
+1. **Preparing PTO handover (00:27 - 01:27)**: This is a low-weight event and won't conflict with any priority events.
+2. **Marketing standup on Zoom (04:14 - 05:29)**: This is a low-weight event and won't conflict with any priority events.
+3. **Client call with Acme Corp (08:18 - 08:48)**: This is a low-weight event and won't conflict with any priority events.
+4. **Brainstorming with Luke and Patrick (11:20 - 12:05)**: This is a priority event.
+5. **Q1 revenue report writing (11:38 - 12:38)**: This event overlaps with the priority event and should be excluded.
+6. **Analyzing product performance (16:27 - 16:57)**: This is a low-weight event and won't conflict with any priority events.
+7. **One-on-one with manager (16:39 - 17:39)**: This event conflicts with "Analyzing product performance" and should be excluded as "Analyzing product performance" has a lower weight.
+</think>
+
+<schedule>
+<event>
+<name>Preparing PTO handover</name>
+<start>00:27</start>
+<end>01:27</end>
+</event>
+<event>
+<name>Marketing standup on Zoom</name>
+<start>04:14</start>
+<end>05:29</end>
+</event>
+<event>
+<name>Client call with Acme Corp</name>
+<start>08:18</start>
+<end>08:48</end>
+</event>
+<event>
+<name>Brainstorming with Luke and Patrick</name>
+<start>11:20</start>
+<end>12:05</end>
+</event>
+<event>
+<name>Analyzing product performance</name>
+<start>16:27</start>
+<end>16:57</end>
+</event>
+</schedule>

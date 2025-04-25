@@ -1,0 +1,34 @@
+<think>
+1. Identify and list all events, including their start and end times.
+2. Identify priority events based on the given criteria.
+3. Ensure that the schedule is in strict chronological order.
+4. Ensure that no overlaps are allowed, and if there are conflicts, choose the event with the higher weight.
+5. Maximize the sum of weighted event durations.
+</think>
+<schedule>
+<event>
+<name>Fireworks</name>
+<start>08:34</start>
+<end>09:34</end>
+</event>
+<event>
+<name>Silent disco party</name>
+<start>14:40</start>
+<end>16:10</end>
+</event>
+<event>
+<name>David Guetta DJ set</name>
+<start>17:32</start>
+<end>18:17</end>
+</event>
+<event>
+<name>Sum 41 concert</name>
+<start>18:10</start>
+<end>18:25</end>
+</event>
+<event>
+<name>Korean BBQ food trucks</name>
+<start>21:41</start>
+<end>22:26</end>
+</event>
+</schedule>

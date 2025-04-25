@@ -1,0 +1,44 @@
+<think>
+To create an optimized schedule based on the given events, we need to follow the rules strictly and ensure that there are no overlaps. The priority events (Live coding on Rust and AI keynote) should be included if possible, and the schedule should maximize the sum of weighted event durations. Here's a step-by-step reasoning:
+
+1. **AI keynote (00:20 - 00:50)**: priority event.
+2. **Small Language Models talk (00:41 - 01:26)**: overlaps with AI keynote, so this event must be excluded.
+3. **Live coding on Rust (04:42 - 06:27)**: priority event.
+4. **Web3 panel discussion (13:42 - 14:27)**: no overlap with other events.
+5. **Async Python talk (15:39 - 17:09)**: overlaps with Digital detox meditation session, so one of these must be excluded.
+6. **Digital detox meditation session (16:16 - 18:01)**: has an overlap with Async Python talk, so one of these must be excluded.
+7. **Drone building hackathon (18:53 - 20:08)**: no overlap with other events.
+
+To maximize the weighted duration, we need to choose the events that do not overlap and have the highest combined weight. Given the priority events, we will include them and exclude any overlapping events with lower weight.
+
+Final selection:
+- AI keynote (00:20 - 00:50)
+- Live coding on Rust (04:42 - 06:27)
+- Web3 panel discussion (13:42 - 14:27)
+- Drone building hackathon (18:53 - 20:08)
+
+These events are in strict chronological order and do not overlap.
+</think>
+
+<schedule>
+<event>
+<name>AI keynote</name>
+<start>00:20</start>
+<end>00:50</end>
+</event>
+<event>
+<name>Live coding on Rust</name>
+<start>04:42</start>
+<end>06:27</end>
+</event>
+<event>
+<name>Web3 panel discussion</name>
+<start>13:42</start>
+<end>14:27</end>
+</event>
+<event>
+<name>Drone building hackathon</name>
+<start>18:53</start>
+<end>20:08</end>
+</event>
+</schedule>
