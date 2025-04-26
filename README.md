@@ -12,7 +12,27 @@ I hope sharing this experiment is useful for anyone else diving into RL for LLMs
 
 <img src="./images/qwen_scheduler_logo.png" width="40%"></img>
 
-## The problem
+🧷 **Table of content**
+- [Why?](#why)
+- [Problem definition](#problem-definition)
+- [Repository organization](#repository-organization)
+- [Materials](#materials)
+
+## Why?
+
+Teaching a Language Model something that can be easily and efficiently solved with deterministic programming might 
+sound not very useful... And that's fine!
+
+But it's 2025, and everyone is trying GRPO with GSM8K or the Countdown Game...
+
+I was fascinated by making an LLM learn without explicit examples, just prompts and rewards. And I wanted to try
+something different.
+
+Choosing an original problem (events scheduling) forced me to think about the problem setting, generate data, choose the base model, design reward functions (and experiment fun things like reward hacking!) and run multiple rounds of training, hoping that my model would learn something.
+
+A fun and rewarding 😄 experience.
+
+## Problem definition
 
 Given a list of events and priorities, we ask the model to create a schedule that maximizes the total duration of selected events, weighted by priority.
 
@@ -45,20 +65,6 @@ Priorities:
 </event>
 </schedule>
 ```
-
-## Why?
-
-Teaching a Language Model something that can be easily and efficiently solved with deterministic programming might 
-sound not very useful... And that's fine!
-
-But it's 2025, and everyone is trying GRPO with GSM8K or the Countdown Game...
-
-I was fascinated by making an LLM learn without explicit examples, just prompts and rewards. And I wanted to try
-something different.
-
-Choosing an original problem (events scheduling) forced me to think about the problem setting, generate data, choose the base model, design reward functions (and experiment fun things like reward hacking!) and run multiple rounds of training, hoping that my model would learn something.
-
-A fun and rewarding 😄 experience.
 
 ## Results
 
