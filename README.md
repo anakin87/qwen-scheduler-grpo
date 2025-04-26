@@ -62,7 +62,7 @@ A fun and rewarding 😄 experience.
 
 ## Results
 
-<img src="./assets/eval_valid_schedules.png" width="40%"></img>
+<img src="./assets/eval_valid_schedules.png"></img>
 
 The training worked! The final 7B model improved on the task, significantly outperforming its base model and even a larger 14B model on the test set.
 
