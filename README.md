@@ -8,13 +8,14 @@ completions, only the prompts.
 
 I hope sharing this experiment is useful for anyone else diving into RL for LLMs.
 
-➡️ Read the full story [in my blog post](PUTLKINK).
+➡️ Read the full story [in my blog post](https://huggingface.co/blog/anakin87/qwen-scheduler-grpo).
 
 <img src="./images/qwen_scheduler_logo.png" width="40%"></img>
 
 🧷 **Table of content**
 - [Why?](#why)
 - [Problem definition](#problem-definition)
+- [Results](#results)
 - [Repository organization](#repository-organization)
 - [Materials](#materials)
 
@@ -85,7 +86,7 @@ could be improved.
 - [Evaluation](./evaluation/): Scripts for running inference and evaluating model outputs.  (Also contains saved outputs.)
 
 ## Materials
-- [Blog post](PUTLKINK)
+- [Blog post](https://huggingface.co/blog/anakin87/qwen-scheduler-grpo)
 - [Events Scheduling dataset](https://huggingface.co/datasets/anakin87/events-scheduling)
 - [Model: anakin87/qwen-scheduler-7b-grpo](https://huggingface.co/anakin87/qwen-scheduler-7b-grpo)
 - [Weight and Biases report](https://api.wandb.ai/links/stefanofiorucci/22oryc3v)
