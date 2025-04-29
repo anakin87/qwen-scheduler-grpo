@@ -10,7 +10,7 @@ I hope sharing this experiment is useful for anyone else diving into RL for LLMs
 
 ➡️ Read the full story [in my blog post](https://huggingface.co/blog/anakin87/qwen-scheduler-grpo).
 
-<img src="./images/qwen_scheduler_logo.png" width="40%"></img>
+<img src="./images/qwen_scheduler_logo_mini.png"></img>
 
 🧷 **Table of content**
 - [Why?](#why)
